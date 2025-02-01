@@ -1,0 +1,158 @@
+/* css de info.html */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: #F0E9CB;
+    color: #404F4F;
+}
+
+.fondo_logo {
+    width: 100%;
+    background-color: #acb1c0;
+}
+
+
+.logo {
+    height: 50px;
+    background-color: #404F4F;
+}
+
+
+nav ul {
+    background-color: #acb1c0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#519075;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 34px;
+    text-align: center;
+}
+
+
+#hotel_ubicacion {
+    float: left;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+}  
+
+.texto_de_ubicacion {
+    padding-top: 100px;
+    padding-left: 800px;
+    padding-right: 30px;
+    margin-bottom: 200px;
+}
+
+.texto_de_habitacion_barata {
+    padding-top: 185px;
+    padding-left: 800px;
+    padding-right: 30px;
+    margin-bottom: 100px;
+}
+
+.precio_barato { 
+    padding-left: 1000px;
+    padding-right: 30px; 
+    margin-bottom: 160px;    
+}
+
+.texto_de_habitacion_cara {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 800px;
+    margin-bottom: 100px;
+}
+
+.precio_caro {
+    padding-left: 250px;
+    padding-bottom: 135px;
+}
+
+article img {
+    margin-top: 25px;
+    height: 500px;
+    width: auto;
+}
+
+
+.img_derecha {
+    float: right;
+}
+
+article img {
+    border: 1px solid black;
+}
+
+.img_izquierda {
+    float: left;
+}
+
+
+.color_articulo {
+    background-color: #519075;
+    border: black solid 1px;
+}
+
+.color_articulo_distinto {
+    background-color: #5C5E64;
+    border: black solid 1px;
+    color: #519075;
+}
+
+
+.borde_seccion {
+    border: black solid 1px;
+}
+
+
+footer article p {
+    padding-inline-start: 25%;
+
+    float: left;
+}
+
+.redes {
+    float: right;
+    padding-right: 5%;
+}
+
+.redes ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    margin: 20px auto;
+    padding-right: 20px;
+}
+
+a {
+    color: #519075;
+    text-decoration: none;
+}
+
+
+
+
+
