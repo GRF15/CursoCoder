@@ -1,6 +1,6 @@
 /* css de index.html*/
 
-body {
+.body-custom {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     background-color: #F0E9CB;
@@ -9,129 +9,79 @@ body {
 
 h1{
     position: absolute;
-    top: 10px; 
+    top: 10rem; 
     left: 50%; 
     transform: translateX(-50%); 
     font-size: 34px;
     color: #519075;
-    text-decoration: underline;
     text-align: center;
-    z-index: 10; 
     background-color: #F0E9CB;
-    width: 220px;
-    border-radius: 20px;
+    width: 15rem;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #404F4F;
+    border-radius: 10px;
 }
-
 
 .fondo_logo {
     width: 100%;
     background-color: #acb1c0;
 }
 
-.logo {
-    height: 50px;
-    background-color: #404F4F;
-}
 
-nav ul {
+
+.navbar {
     background-color: #acb1c0;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+    
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.navlink {
     text-decoration: none;
     color:#519075;
-    font-size: 16px;
+    font-size: 1.15rem;
 }
 
-nav ul li a:hover {
+.navlink:hover {
     text-decoration: underline;
 }
 
-.banner {
-    position: relative;
-}
-
-.banner img {
-    display: block; 
-    width: 100%; 
-    height: auto;
-}
 
 
-.imagen_de_inicio {
-    width: 100%;
-    height: 700px;
-    padding: 0;
-    margin: 0;
-
-}
-
-button{
-    background-color: #519075 ;
-    display: block;
-    margin: 30px auto; 
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 25px;
-} 
-button:hover {
-    color: #519075;
-    background-color: #E1F0C4;
-    padding: 11px 21px;
-    border-radius: 20px;
+/* Efecto de hover para el botón de reserva */
+.boton-reserva {
+    background-color: #519075;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.8rem;
     transition: all 0.3s ease;
+    margin-top: 2.5rem;
+    box-shadow: 2px 2px 3px #065757;
+    border-radius: 10px;
 }
 
-.div_imagen {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    padding-left: 4%;
+.boton-reserva:hover {
+    font-size: 1.65rem;
+    color: #acb1c0;
+    background-color: #519075;
 }
 
-.div_imagen img {
-    width: 400px; 
-    height: 250px;
-    border: 2px solid #5C5E64;
+.parrafo {
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    margin: 3rem;
 }
 
-.presentacion {
-    margin: 50px auto;
-    text-align: center;
+.footer {
+    background-color: #acb1c0;
 }
 
-
-footer article p {
-    padding-inline-start: 25%;
-
-    float: left;
+.carousel-custom {
+ width: 50rem;
+ box-shadow: 10px 10px 15px #404F4F;
+ border-radius: 10px;
 }
-
-.redes {
-    float: right;
-    padding-right: 5%;
-}
-
-.redes ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
-    margin: 20px auto;
-    padding-right: 20px;
-}
-
-a {
-    color: #519075;
-    text-decoration: none;
-}
-
+.carousel-custom img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+  }

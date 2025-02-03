@@ -7,64 +7,43 @@ body {
     color: #404F4F;
 }
 
+h1{
+    position: absolute;
+    top: 10rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 34px;
+    color: #519075;
+    text-align: center;
+    background-color: #F0E9CB;
+    width: 15rem;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #404F4F;
+    border-radius: 10px;
+}
+
+
 .fondo_logo {
     width: 100%;
     background-color: #acb1c0;
 }
 
 
-.logo {
-    height: 50px;
-    background-color: #5a6b6b;
-}
 
-
-nav ul {
+.navbar {
     background-color: #acb1c0;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+    
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.navlink {
     text-decoration: none;
     color:#519075;
-    font-size: 16px;
+    font-size: 1.15rem;
 }
 
-nav ul li a:hover {
+.navlink:hover {
     text-decoration: underline;
-}
-
-h1{
-    position: absolute;
-    top: 65px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    font-size: 34px;
-    color: #519075;
-    text-decoration: underline;
-    text-align: center;
-    z-index: 10; 
-    background-color: #F0E9CB;
-    width: 220px;
-    border-radius: 20px;
-}
-
-.banner {
-    width: 100%;
-    height: 700px;
-    background-color:#E1F0C4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .banner img {
@@ -72,32 +51,22 @@ h1{
     width: 1250px;
 }
 
-.boton {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.boton button {
-    background-color:#519075;
-    color:#404F4F;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.boton button:hover {
-    color: #519075;
-    background-color: #E1F0C4;
-    padding: 11px 21px;
-    border-radius: 20px;
+/* Efecto de hover para el botón de reserva */
+.boton-reserva {
+    background-color: #519075;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.8rem;
     transition: all 0.3s ease;
-    border:#519075 solid 1px;
+    margin-top: 2.5rem;
+    box-shadow: 2px 2px 3px #065757;
+    border-radius: 10px;
 }
 
-
+.boton-reserva:hover {
+    font-size: 1.65rem;
+    color: #acb1c0;
+    background-color: #519075;
+}
 
 
 

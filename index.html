@@ -3,63 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora Hotel - Inicio</title>
+    <title>Aurora Hotel - Inicio</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="assets/AURORA HOTEL.png">
 </head>
-<body>
-    <header class="navegador">
-        <div class="fondo_logo">
-            <img class="logo" src="assets/AURORA HOTEL.png" alt="Aurora Hotel Logo">
-        </div>
-        <nav>
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="./html/info.html">Nosotros</a></li>
-              <li><a href="./html/contacto.html">Contacto</a></li>
-              
-            </ul>
-          </nav>    
-    </header>
-    <main>
-        <section>
-            <article class="banner">
-                <img class="imagen_de_inicio" src="assets/Diseño sin título.png" alt="recepcion del hotel">
-                <h1>Aurora Hotel</h1>
-            </article>
-            <article>
-                <button onclick="window.open( './html/contacto.html' , '_blank')">Reservar</button>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div class="div_imagen">
-                    <img src="assets/DeWatermark.ai_1734492686669.png" alt="habitacion de hotel">
-                    <img src="assets/Diseño sin título (1).png" alt="mucama">
-                    <img src="assets/dormitorio-cama-doble-ropa-cama-blanca-cama-champan-copas-verano-rayo-sol_167368-627-transformed.jpeg" alt="servicio al cuarto">
+<body class="vh-100 body-custom">
+    <!-- Encabezado con logo y barra de navegación -->
+    <header class="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Barra de navegación -->
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container-fluid d-flex align-items-center">
+                    <!-- Logo y nombre del hotel -->
+                    <a class="navbar-brand d-flex align-items-center fondo_logo logo" href="./index.html">
+                        <img src="assets/AURORA HOTEL.png" alt="Aurora Hotel Logo" width="100" class="me-2">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="navlink me-5" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navlink me-5" href="./html/info.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navlink me-5" href="./html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <p class="presentacion">Hotel Aurora, un refugio de tranquilidad y lujo situado en un entorno espectacular. Nuestro compromiso es brindar experiencias memorables, combinando comodidad, estilo y hospitalidad de primer nivel. Ya sea que busques una escapada romántica, un viaje en familia o un retiro personal, el Hotel Aurora es el lugar perfecto para desconectarte y disfrutar.
-                    Diseñado para ofrecer una experiencia de descanso y lujo. Cuenta con 50 habitaciones elegantes, un restaurante de alta cocina, spa, y actividades para relajarte.
-                </p>
-            </article>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Contenido principal -->
+    <main class="container-fluid">
+        <!-- Sección de bienvenida con imagen destacada y botón de reserva -->
+        <section class="text-center">
+            <div class="banner">
+                <img class="img-fluid" src="assets/Diseño sin título.png" alt="imagen de la piscina del hotel">
+                <h1 class="my-3">Aurora Hotel</h1>
+            </div>
+            <button class="btn boton-reserva" onclick="window.open('./html/contacto.html', '_blank')">Reservar</button>
+        </section>
+
+        <!-- Carrusel con tres imágenes representativas del hotel -->
+        <section class="mt-5 d-flex justify-content-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-custom" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/DeWatermark.ai_1734492686669.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/DeWatermark.ai_1734492978317.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/Diseño sin título (1).png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </section>
+
+        <!-- Descripción general del hotel -->
+        <section class="parrafo py-5">
+            <p class="text-justify">Hotel Aurora, un refugio de tranquilidad y lujo situado en un entorno espectacular. Nuestro compromiso es brindar experiencias memorables, combinando comodidad, estilo y hospitalidad de primer nivel. Ya sea que busques una escapada romántica, un viaje en familia o un retiro personal, el Hotel Aurora es el lugar perfecto para desconectarte y disfrutar. Diseñado para ofrecer una experiencia de descanso y lujo. Cuenta con 50 habitaciones elegantes, un restaurante de alta cocina, spa, y actividades para relajarte.</p>
         </section>
     </main>
-    <footer>
-        <article>
-            <p>© 2024 Todos los derechos reservados.</p>
-        </article>
-        <div class="redes">
+
+    <!-- Pie de página con redes sociales -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
             <p>Nuestras Redes</p>
-            <ul>
-                <li><a href="https://www.instagram.com"><img src="https://scontent.fmvd2-2.fna.fbcdn.net/v/t39.8562-6/125184609_367828907811587_6232717932985532700_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=P2mx2KIjloUQ7kNvgEFOJ-O&_nc_zt=14&_nc_ht=scontent.fmvd2-2.fna&_nc_gid=A63vx5afY1PMWYOeqaQlG4T&oh=00_AYBoO7FJ1ZWVj61JLoxkl1P2x5ssYz4Z2UVC3B_zBAQ4Hg&oe=676FE619" alt="Instagram" width="30" height="30"></a></li>
-                <li><a href="https://www.facebook.com"><img src="https://scontent.fmvd2-2.fna.fbcdn.net/v/t39.8562-6/120319840_799089310850692_4027936540782357774_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=OWThN5BQiSMQ7kNvgF9qDDm&_nc_zt=14&_nc_ht=scontent.fmvd2-2.fna&_nc_gid=A63vx5afY1PMWYOeqaQlG4T&oh=00_AYDq1JO2bu3oxhJywjZgRDMI_8b-0AEEKzMVLPxDFYdNlA&oe=676FE241" alt="Facebook" width="30" height="30"></a></li>
-                <li><a href="https://web.whatsapp.com"><img src="https://static.whatsapp.net/rsrc.php/v4/yz/r/ujTY9i_Jhs1.png" alt="WhatsApp" width="30" height="30"></a></li>
-            </ul>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.instagram.com" class="mx-2"><img src="https://scontent.fmvd2-2.fna.fbcdn.net/v/t39.8562-6/125184609_367828907811587_6232717932985532700_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=P2mx2KIjloUQ7kNvgEFOJ-O&_nc_zt=14&_nc_ht=scontent.fmvd2-2.fna&_nc_gid=A63vx5afY1PMWYOeqaQlG4T&oh=00_AYBoO7FJ1ZWVj61JLoxkl1P2x5ssYz4Z2UVC3B_zBAQ4Hg&oe=676FE619" alt="Instagram" width="30"></a>
+                <a href="https://www.facebook.com" class="mx-2"><img src="https://scontent.fmvd2-2.fna.fbcdn.net/v/t39.8562-6/120319840_799089310850692_4027936540782357774_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=OWThN5BQiSMQ7kNvgF9qDDm&_nc_zt=14&_nc_ht=scontent.fmvd2-2.fna&_nc_gid=A63vx5afY1PMWYOeqaQlG4T&oh=00_AYDq1JO2bu3oxhJywjZgRDMI_8b-0AEEKzMVLPxDFYdNlA&oe=676FE241" alt="Facebook" width="30"></a>
+                <a href="https://web.whatsapp.com" class="mx-2"><img src="https://static.whatsapp.net/rsrc.php/v4/yz/r/ujTY9i_Jhs1.png" alt="WhatsApp" width="30"></a>
+            </div>
         </div>
-      </footer>
-      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
