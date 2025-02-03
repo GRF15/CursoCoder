@@ -22,10 +22,6 @@ h1{
     border-radius: 10px;
 }
 
-.fondo_logo {
-    width: 100%;
-    background-color: #acb1c0;
-}
 
 
 
@@ -47,7 +43,6 @@ h1{
 
 
 
-/* Efecto de hover para el botón de reserva */
 .boton-reserva {
     background-color: #519075;
     font-size: 1.5rem;
@@ -84,4 +79,12 @@ h1{
     height: 100%;
     width: 100%;
     border-radius: 12px;
-  }
+}
+
+@media (max-width: 990px) {
+    .banner h1 {
+    top: 15.5rem;
+    font-size: 30px;
+    }
+}
+  

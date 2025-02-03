@@ -1,35 +1,11 @@
-/* css de contacto.html */
-
+/* contacto.css */
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     background-color: #F0E9CB;
     color: #404F4F;
 }
-
-h1{
-    position: absolute;
-    top: 10rem; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    font-size: 34px;
-    color: #519075;
-    text-align: center;
-    background-color: #F0E9CB;
-    width: 15rem;
-    border-radius: 25px;
-    box-shadow: 5px 5px 10px #404F4F;
-    border-radius: 10px;
-}
-
-
-.fondo_logo {
-    width: 100%;
-    background-color: #acb1c0;
-}
-
-
-
+  
 .navbar {
     background-color: #acb1c0;
     list-style: none;
@@ -46,116 +22,62 @@ h1{
     text-decoration: underline;
 }
 
-.banner img {
-    height: 700px;
-    width: 1250px;
-}
-
-/* Efecto de hover para el botón de reserva */
-.boton-reserva {
-    background-color: #519075;
-    font-size: 1.5rem;
-    padding: 0.75rem 1.8rem;
-    transition: all 0.3s ease;
-    margin-top: 2.5rem;
-    box-shadow: 2px 2px 3px #065757;
+  h1{
+    position: absolute;
+    top: 10rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 34px;
+    color: #519075;
+    text-align: center;
+    background-color: #F0E9CB;
+    width: 15rem;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #404F4F;
     border-radius: 10px;
 }
-
-.boton-reserva:hover {
-    font-size: 1.65rem;
-    color: #acb1c0;
-    background-color: #519075;
+@media (max-width: 990px) {
+    .banner h1 {
+    top: 15.5rem;
+    font-size: 30px;
+    }
 }
-
-
-
-.formulario {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    
-}
-
-.formulario form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.formulario form input,
-.formulario form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.formulario form textarea {
-    grid-column: span 2;
-}
-
-.formulario form button {
-    grid-column: span 2;
-    background-color:#519075;
-    color:#404F4F;
+  
+ 
+  .card {
     border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.formulario form button:hover {
-    color: #519075;
-    background-color: #E1F0C4;
-    padding: 11px 21px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    border:#519075 solid 1px;
-}
-
-
-.formulario form input {
-    display: block;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-footer article p {
-    padding-inline-start: 25%;
-
-    float: left;
-}
-
-.redes {
-    float: right;
-    padding-right: 5%;
-}
-
-.redes ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
-    margin: 20px auto;
-    padding-right: 20px;
-}
-
-a {
-    color: #519075;
-    text-decoration: none;
-}
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+ 
+  .form-label {
+    font-weight: 600;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+  }
+  
+  
+  .btn-primary {
+    background-color: #519075;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #40705c;
+  }
+  
+  
+  footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
