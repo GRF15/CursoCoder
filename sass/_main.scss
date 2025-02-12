@@ -1,0 +1,74 @@
+// _main.scss
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+// Estilos para tarjetas y formularios
+.card {
+    border: none;
+    border-radius: 8px;
+  
+    .card-body {
+      padding: 2rem;
+    }
+  }
+  
+  .form-label {
+    font-weight: 600;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+  }
+  
+  // Estilos para textos dentro de tarjetas
+  .card-title {
+    @include text-style($text-color, 24px);
+  }
+  
+  .card-text {
+    @include text-style($text-color, 16px);
+  }
+  
+  // Estilos para redes (usando grid)
+  .redes ul {
+    @include grid(3, 5%);
+    margin: 20px auto;
+    padding-right: 20px;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+  }
+  
+  // Estilo para botón de reserva (de style.scss)
+  .boton-reserva {
+    @include button-style();
+    margin-top: 2.5rem;
+    box-shadow: 2px 2px 3px $button-shadow-color;
+  
+    &:hover {
+      font-size: 1.65rem;
+      color: $navbar-bg;
+    }
+  }
+  
+  // Estilo para párrafos (de style.scss)
+  .parrafo {
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    margin: 3rem;
+  }
+  
+  // Estilos para el carrusel
+  .carousel-custom {
+    @include carousel-style();
+  
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+  

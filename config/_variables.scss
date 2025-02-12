@@ -1,0 +1,15 @@
+// _variables.scss
+@use "sass:color";
+
+// Variables generales (combinadas de contacto, info y style)
+$font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$font-size-base: 18px;
+$background-color: #F0E9CB;
+$text-color: #404F4F;
+$link-color: #519075;
+$link-hover-text: underline;
+$link-hover-color: color.scale($link-color, $lightness: -10%);
+$navbar-bg: #acb1c0;
+$box-shadow-color: rgba(64, 79, 79, 0.5);
+$footer-bg: #5C5E64;
+$button-shadow-color: rgba(6, 87, 87, 0.5);

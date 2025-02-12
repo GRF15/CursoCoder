@@ -1,0 +1,47 @@
+// _header.scss
+
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+// Estilos para la barra de navegación
+.navbar {
+    background-color: $navbar-bg;
+    list-style: none;
+  
+    .navlink {
+      text-decoration: none;
+      color: $link-color;
+      font-size: 1.15rem;
+  
+      &:hover {
+        text-decoration: $link-hover-text;
+      }
+    }
+  }
+  
+  // Encabezado tipo h1 (usado en contacto y style)
+  h1 {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    color: $link-color;
+    text-align: center;
+    background-color: $background-color;
+    width: 15rem;
+    border-radius: 10px;
+    @include box-shadow();
+  }
+  
+  // Encabezado alternativo (.titulo) (usado en info)
+  .titulo {
+    top: 10rem;
+    font-size: 34px;
+    color: $text-color;
+    background-color: $navbar-bg;
+    width: 20rem;
+    border-radius: 15px;
+    @include text-style($text-color, 34px);
+  }
+  

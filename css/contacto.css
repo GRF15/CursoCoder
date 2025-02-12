@@ -1,4 +1,4 @@
-/* contacto.css */
+/* contacto.css *
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
@@ -36,12 +36,7 @@ body {
     box-shadow: 5px 5px 10px #404F4F;
     border-radius: 10px;
 }
-@media (max-width: 990px) {
-    .banner h1 {
-    top: 15.5rem;
-    font-size: 30px;
-    }
-}
+
   
  
   .card {
@@ -80,4 +75,12 @@ body {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
   }
+
+
   
+  @media (max-width: 990px) {
+    .banner h1 {
+    top: 15.5rem;
+    font-size: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+// _mixin.scss
+@use './variables' as *;
+
+// Mixin para aplicar box-shadow con parámetros personalizables
+@mixin box-shadow($x: 5px, $y: 5px, $blur: 10px, $color: $box-shadow-color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Mixin para transiciones
+@mixin transition($property: all, $duration: 0.3s, $timing-function: ease) {
+  transition: $property $duration $timing-function;
+}
+
+// Mixin para un layout tipo grid
+@mixin grid($columns: 3, $gap: 5%) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// Mixin para estilos de texto (color y tamaño)
+@mixin text-style($color: $text-color, $size: 16px) {
+  color: $color;
+  font-size: $size;
+}
+
+// Mixin para el estilo de botones
+@mixin button-style($bg-color: $link-color, $text-size: 1.5rem, $padding: 0.75rem 1.8rem) {
+  background-color: $bg-color;
+  font-size: $text-size;
+  padding: $padding;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+// Mixin para el estilo de carrusel
+@mixin carousel-style($width: 50rem, $shadow: 10px 10px 15px $text-color, $border-radius: 12px) {
+  width: $width;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+}

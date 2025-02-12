@@ -1,0 +1,33 @@
+// _footer.scss
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+// Botón primario (por ejemplo, de contacto)
+.btn-primary {
+    background-color: $link-color;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    @include transition(background-color);
+  
+    &:hover {
+        background-color: $link-hover-color;
+    }
+  }
+  
+  // Estilos para el elemento footer (de info.scss)
+  footer {
+    background-color: $footer-bg;
+  
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+  }
+  
+  // Además, se incluye la clase .footer (como en style.scss)
+  .footer {
+    background-color: $navbar-bg;
+  }
+  

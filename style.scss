@@ -1,0 +1,12 @@
+
+@use 'config/variables';
+@use 'config/mixin';
+@use 'sass/header';
+@use 'sass/main';
+@use 'sass/footer';
+
+//reset
+@use 'config/reset';
+
+//mq
+@use 'sass/medias';

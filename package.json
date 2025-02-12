@@ -1,0 +1,21 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "description": "Este proyecto es una prueba final para el curso de Programación Web. Consiste en el desarrollo de un sitio web para un hotel ficticio, utilizando HTML, CSS, JavaScript y Bootstrap.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch style.scss css/main.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRF15/CursoCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GRF15/CursoCoder/issues"
+  },
+  "homepage": "https://github.com/GRF15/CursoCoder#readme"
+}
