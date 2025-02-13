@@ -1,3 +1,11 @@
+.body-custom {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  background-color: #F0E9CB;
+  color: #374343;
+  padding: 0;
+}
+
 .navbar {
   background-color: #acb1c0;
   list-style: none;
@@ -11,7 +19,7 @@
   text-decoration: underline;
 }
 
-h1 {
+.tituloprinc {
   position: absolute;
   top: 10rem;
   left: 50%;
@@ -22,18 +30,18 @@ h1 {
   background-color: #F0E9CB;
   width: 15rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(64, 79, 79, 0.5);
+  box-shadow: 5px 5px 10px #404F4F;
 }
 
 .titulo {
   top: 10rem;
   font-size: 34px;
-  color: #404F4F;
-  background-color: #acb1c0;
+  color: #519075;
+  background-color: #F0E9CB;
   width: 20rem;
+  border: 1px solid #acb1c0;
   border-radius: 15px;
-  color: #404F4F;
-  font-size: 34px;
+  box-shadow: 5px 5px 10px #404F4F;
 }
 
 .card {
@@ -90,7 +98,7 @@ a {
 }
 
 .parrafo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding: 1rem 4rem;
   margin: 3rem;
 }

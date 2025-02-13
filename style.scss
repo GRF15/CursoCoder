@@ -1,6 +1,7 @@
 
 @use 'config/variables';
 @use 'config/mixin';
+@use 'sass/body.scss';
 @use 'sass/header';
 @use 'sass/main';
 @use 'sass/footer';
@@ -10,3 +11,4 @@
 
 //mq
 @use 'sass/medias';
+

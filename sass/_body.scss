@@ -1,0 +1,11 @@
+
+@use '../config/variables' as *;
+@use '../config/mixin' as *;
+
+.body-custom {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    background-color: $background-color;
+    color: #374343;
+    padding: 0;
+  }

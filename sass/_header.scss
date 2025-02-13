@@ -20,7 +20,7 @@
   }
   
   // Encabezado tipo h1 (usado en contacto y style)
-  h1 {
+  .tituloprinc {
     position: absolute;
     top: 10rem;
     left: 50%;
@@ -31,17 +31,18 @@
     background-color: $background-color;
     width: 15rem;
     border-radius: 10px;
-    @include box-shadow();
+    @include box-shadow(5px, 5px, 10px, #404F4F);
   }
   
   // Encabezado alternativo (.titulo) (usado en info)
   .titulo {
     top: 10rem;
     font-size: 34px;
-    color: $text-color;
-    background-color: $navbar-bg;
+    color: $link-color;
+    background-color: $background-color;
     width: 20rem;
+    border: 1px solid $navbar-bg;
     border-radius: 15px;
-    @include text-style($text-color, 34px);
+    @include box-shadow(5px, 5px, 10px, #404F4F);
   }
   
