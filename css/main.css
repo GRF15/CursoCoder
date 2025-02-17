@@ -38,7 +38,8 @@
   font-size: 34px;
   color: #519075;
   background-color: #F0E9CB;
-  width: 20rem;
+  width: 15rem;
+  text-align: center;
   border: 1px solid #acb1c0;
   border-radius: 15px;
   box-shadow: 5px 5px 10px #404F4F;
@@ -50,6 +51,10 @@
 }
 .card .card-body {
   padding: 2rem;
+}
+
+.section-ubicacion {
+  height: 300px;
 }
 
 .form-label {
@@ -99,8 +104,6 @@ a {
 
 .parrafo {
   font-size: 1.5rem;
-  padding: 1rem 4rem;
-  margin: 3rem;
 }
 
 .carousel-custom {
@@ -149,6 +152,10 @@ footer p {
   .banner h1 {
     top: 15.5rem;
     font-size: 30px;
+  }
+  .titulo {
+    font-size: 30px;
+    max-width: 20rem;
   }
 }
 

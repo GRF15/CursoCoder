@@ -5,44 +5,44 @@
 
 // Estilos para la barra de navegación
 .navbar {
-    background-color: $navbar-bg;
-    list-style: none;
-  
-    .navlink {
-      text-decoration: none;
-      color: $link-color;
-      font-size: 1.15rem;
-  
-      &:hover {
-        text-decoration: $link-hover-text;
-      }
+  background-color: $navbar-bg;
+  list-style: none;
+
+  .navlink {
+    text-decoration: none;
+    color: $link-color;
+    font-size: 1.15rem;
+
+    &:hover {
+      text-decoration: $link-hover-text;
     }
   }
-  
-  // Encabezado tipo h1 (usado en contacto y style)
-  .tituloprinc {
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 34px;
-    color: $link-color;
-    text-align: center;
-    background-color: $background-color;
-    width: 15rem;
-    border-radius: 10px;
-    @include box-shadow(5px, 5px, 10px, #404F4F);
-  }
-  
-  // Encabezado alternativo (.titulo) (usado en info)
-  .titulo {
-    top: 10rem;
-    font-size: 34px;
-    color: $link-color;
-    background-color: $background-color;
-    width: 20rem;
-    border: 1px solid $navbar-bg;
-    border-radius: 15px;
-    @include box-shadow(5px, 5px, 10px, #404F4F);
-  }
-  
+}
+
+// Encabezado tipo h1 (usado en contacto y style)
+.tituloprinc {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 34px;
+  color: $link-color;
+  text-align: center;
+  background-color: $background-color;
+  width: 15rem;
+  border-radius: 10px;
+  @include box-shadow(5px, 5px, 10px, #404F4F);
+}
+
+// Encabezado alternativo (.titulo) (usado en info)
+.titulo {
+  top: 10rem;
+  font-size: 34px;
+  color: $link-color;
+  background-color: $background-color;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid $navbar-bg;
+  border-radius: 15px;
+  @include box-shadow(5px, 5px, 10px, #404F4F);
+}
