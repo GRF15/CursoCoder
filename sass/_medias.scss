@@ -1,11 +1,12 @@
 // medias.scss
 
 // Media query para ajustar encabezados en pantallas menores 
-@media (max-width: 990px) {
+@media (width <= 990px) {
 .banner h1 {
     top: 15.5rem;
     font-size: 30px;
 }
+
 .titulo{
     font-size: 30px;
     max-width: 20rem;

@@ -10,11 +10,13 @@
   background-color: #acb1c0;
   list-style: none;
 }
+
 .navbar .navlink {
   text-decoration: none;
   color: #519075;
   font-size: 1.15rem;
 }
+
 .navbar .navlink:hover {
   text-decoration: underline;
 }
@@ -49,6 +51,7 @@
   border: none;
   border-radius: 8px;
 }
+
 .card .card-body {
   padding: 2rem;
 }
@@ -95,8 +98,9 @@ a {
   transition: all 0.3s ease;
   border-radius: 10px;
   margin-top: 2.5rem;
-  box-shadow: 2px 2px 3px rgba(6, 87, 87, 0.5);
+  box-shadow: 2px 2px 3px rgba(6, 87, 87, 50%);
 }
+
 .boton-reserva:hover {
   font-size: 1.65rem;
   color: #acb1c0;
@@ -111,6 +115,7 @@ a {
   box-shadow: 10px 10px 15px #404F4F;
   border-radius: 12px;
 }
+
 .carousel-custom img {
   object-fit: cover;
   height: 100%;
@@ -125,6 +130,7 @@ a {
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
+
 .btn-primary:hover {
   background-color: rgb(72.9, 129.6, 105.3);
 }
@@ -132,10 +138,11 @@ a {
 footer {
   background-color: #5C5E64;
 }
+
 footer p {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer {
@@ -153,6 +160,7 @@ footer p {
     top: 15.5rem;
     font-size: 30px;
   }
+  
   .titulo {
     font-size: 30px;
     max-width: 20rem;

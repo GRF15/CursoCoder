@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "sass --watch style.scss css/main.css"
-
+    "watch-css": "sass --watch style.scss css/main.css",
+    "lint:css": "stylelint '**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/GRF15/CursoCoder/issues"
   },
-  "homepage": "https://github.com/GRF15/CursoCoder#readme"
+  "homepage": "https://github.com/GRF15/CursoCoder#readme",
+  "devDependencies": {
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.0"
+  }
 }

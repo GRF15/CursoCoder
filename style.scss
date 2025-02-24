@@ -1,14 +1,13 @@
-
 @use 'config/variables';
 @use 'config/mixin';
-@use 'sass/body.scss';
+@use 'sass/body';
 @use 'sass/header';
 @use 'sass/main';
 @use 'sass/footer';
 
-//reset
+/* reset */
 @use 'config/reset';
 
-//mq
+/* mq */
 @use 'sass/medias';
 
