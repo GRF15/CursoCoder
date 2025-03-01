@@ -23,12 +23,13 @@
 .tituloprinc {
   position: absolute;
   top: 10rem;
-  font-size: 34px;
-  color: $link-color;
+  font-size: 60px;
+  color: $titulo-color;
   text-align: center;
   background-color: $background-color;
-  width: 15rem;
+  width: 25rem;
   border-radius: 10px;
+  margin-bottom: 10rem;
 
   @include box-shadow(5px, 5px, 10px, #404F4F);
 }
@@ -36,13 +37,14 @@
 // Encabezado alternativo (.titulo) (usado en info) 
 .titulo {
   top: 10rem;
-  font-size: 34px;
-  color: $link-color;
+  font-size: 60px;
+  color: $titulo-color;
   background-color: $background-color;
-  width: 15rem;
+  width: 25rem;
   text-align: center;
   border: 1px solid $navbar-bg;
   border-radius: 15px;
+  margin-bottom: 10rem;
 
   @include box-shadow(5px, 5px, 10px, #404F4F);
 }

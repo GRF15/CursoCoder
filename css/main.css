@@ -12,7 +12,7 @@
 }
 .navbar .navlink {
   text-decoration: none;
-  color: #519075;
+  color: #0e3e2a;
   font-size: 1.15rem;
 }
 .navbar .navlink:hover {
@@ -22,24 +22,26 @@
 .tituloprinc {
   position: absolute;
   top: 10rem;
-  font-size: 34px;
+  font-size: 60px;
   color: #519075;
   text-align: center;
   background-color: #F0E9CB;
-  width: 15rem;
+  width: 25rem;
   border-radius: 10px;
+  margin-bottom: 10rem;
   box-shadow: 5px 5px 10px #404F4F;
 }
 
 .titulo {
   top: 10rem;
-  font-size: 34px;
+  font-size: 60px;
   color: #519075;
   background-color: #F0E9CB;
-  width: 15rem;
+  width: 25rem;
   text-align: center;
   border: 1px solid #acb1c0;
   border-radius: 15px;
+  margin-bottom: 10rem;
   box-shadow: 5px 5px 10px #404F4F;
 }
 
@@ -70,7 +72,7 @@
 }
 
 .card-title {
-  color: #404F4F;
+  color: #519075;
   font-size: 24px;
 }
 
@@ -93,21 +95,34 @@ a {
 }
 
 .boton-reserva {
-  background-color: #519075;
+  background-color: #0e3e2a;
   font-size: 1.5rem;
   padding: 0.75rem 1.8rem;
   transition: all 0.3s ease;
   border-radius: 10px;
+  background-color: #519075;
+  color: #404F4F;
   margin-top: 2.5rem;
   box-shadow: 2px 2px 3px rgba(6, 87, 87, 0.5);
 }
 .boton-reserva:hover {
   font-size: 1.65rem;
-  color: #acb1c0;
+  background-color: #acb1c0;
+  color: #519075;
 }
 
 .parrafo {
   font-size: 1.5rem;
+}
+
+.presentacion {
+  margin-top: 2.5rem;
+  position: absolute;
+  color: white;
+  top: 20rem;
+  font-size: 24px;
+  max-width: 90rem;
+  background-color: rgba(0, 0, 0, 0.4196078431);
 }
 
 .carousel-custom {
@@ -143,12 +158,9 @@ a {
   transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: rgb(72.9, 129.6, 105.3);
+  background-color: rgb(12.6, 55.8, 37.8);
 }
 
-footer {
-  background-color: #5C5E64;
-}
 footer p {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
@@ -167,10 +179,19 @@ footer p {
 }
 
 /* mq */
-@media (width <= 990px) {
-  .banner h1 {
-    top: 15.5rem;
+@media (max-width: 1040px) {
+  h1.titulo, .tituloprinc {
+    top: 10rem;
     font-size: 40px;
+  }
+  .presentacion {
+    margin-top: 2rem;
+    position: absolute;
+    color: white;
+    top: 13rem;
+    font-size: 18px;
+    max-width: 60rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
   }
   .body-custom {
     font-size: 30px;
@@ -178,6 +199,138 @@ footer p {
   .titulo {
     font-size: 40px;
     max-width: 20rem;
+  }
+}
+@media (max-width: 790px) {
+  .container {
+    padding: 0 15px;
+  }
+  h1.titulo, .tituloprinc {
+    font-size: 2rem;
+    top: 8rem;
+  }
+  .presentacion {
+    margin-top: 0rem;
+    position: absolute;
+    color: white;
+    top: 13rem;
+    font-size: 16px;
+    max-width: 60rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+  .row.grid {
+    flex-direction: column;
+  }
+  .section-ubicacion,
+  .parrafo {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .contact-section {
+    padding: 70px 0;
+  }
+  .carousel-inner img {
+    height: auto;
+  }
+}
+@media (max-width: 690px) {
+  h1.titulo, .tituloprinc {
+    top: 5rem;
+  }
+  .presentacion {
+    margin-top: 0rem;
+    position: absolute;
+    color: white;
+    top: 10rem;
+    font-size: 16px;
+    max-width: 40rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+}
+@media (max-width: 630px) {
+  h1.titulo, .tituloprinc {
+    top: 4rem;
+  }
+  .presentacion {
+    margin-top: 0rem;
+    position: absolute;
+    color: white;
+    top: 8rem;
+    font-size: 16px;
+    max-width: 40rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+}
+@media (max-width: 590px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+  h1.titulo, .tituloprinc {
+    top: 2rem;
+  }
+  .presentacion {
+    margin-top: 0rem;
+    position: absolute;
+    color: white;
+    top: 6rem;
+    font-size: 14px;
+    max-width: 30rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  iframe#hotel_ubicacion {
+    width: 100%;
+    height: 250px;
+  }
+  .contact-section {
+    background-position: center;
+  }
+}
+@media (max-width: 530px) {
+  h1.titulo, .tituloprinc {
+    top: 1rem;
+  }
+  .presentacion {
+    margin-top: 1rem;
+    position: absolute;
+    color: white;
+    top: 3rem;
+    font-size: 14px;
+    max-width: 300rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+}
+@media (max-width: 490px) {
+  h1.titulo, .tituloprinc {
+    top: 1rem;
+  }
+  .presentacion {
+    margin-top: 1rem;
+    position: absolute;
+    color: white;
+    top: 3rem;
+    font-size: 12px;
+    max-width: 40rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+  }
+}
+@media (max-width: 420px) {
+  h1.titulo, .tituloprinc {
+    top: 0.2rem;
+  }
+  .presentacion {
+    margin-top: 0.5rem;
+    position: absolute;
+    color: white;
+    top: 2rem;
+    font-size: 10px;
+    max-width: 40rem;
+    background-color: rgba(0, 0, 0, 0.4196078431);
   }
 }
 

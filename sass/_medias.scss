@@ -1,18 +1,169 @@
 // medias.scss
 
 // Media query para ajustar encabezados en pantallas menores 
-@media (width <= 990px) {
-.banner h1 {
-    top: 15.5rem;
-    font-size: 40px;
+@media (max-width: 1040px) {
+    h1.titulo, .tituloprinc {
+        top: 10rem;
+        font-size: 40px;
+    }
+
+    .presentacion {
+        margin-top: 2rem;
+        position: absolute;
+        color: #ffff;
+        top: 13rem;
+        font-size: 18px;
+        max-width: 60rem;
+        background-color: #0000006b;
+        }
+        
+    .body-custom {
+        font-size: 30px    
+    }
+
+    .titulo{
+        font-size: 40px;
+        max-width: 20rem;
+    }
 }
 
-.body-custom {
-    font-size: 30px    
+@media (max-width: 790px) {
+    .container {
+        padding: 0 15px;
+    }
+    h1.titulo, .tituloprinc {
+        font-size: 2rem;
+        top: 8rem;
+    }
+    .presentacion {
+    margin-top: 0rem;
+    position: absolute;
+    color: #ffff;
+    top: 13rem;
+    font-size: 16px;
+    max-width: 60rem;
+    background-color: #0000006b;
+    }
+    .row.grid {
+        flex-direction: column;
+    }
+    .section-ubicacion,
+    .parrafo {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .contact-section {
+        padding: 70px 0;
+    }
+    .carousel-inner img {
+        height: auto;
+    }
+}
+@media (max-width: 690px) {
+    h1.titulo, .tituloprinc {
+        top: 5rem;
+    }
+    .presentacion {
+        margin-top: 0rem;
+        position: absolute;
+        color: #ffff;
+        top: 10rem;
+        font-size: 16px;
+        max-width: 40rem;
+        background-color: #0000006b;
+        }
+    
 }
 
-.titulo{
-    font-size: 40px;
-    max-width: 20rem;
+@media (max-width: 630px) {
+    h1.titulo, .tituloprinc {
+        top: 4rem;
+    }
+    .presentacion {
+        margin-top: 0rem;
+        position: absolute;
+        color: #ffff;
+        top: 8rem;
+        font-size: 16px;
+        max-width: 40rem;
+        background-color: #0000006b;
+        }
+    
 }
+
+@media (max-width: 590px) {
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+    h1.titulo, .tituloprinc {
+        top: 2rem;
+    }
+    .presentacion {
+        margin-top: 0rem;
+        position: absolute;
+        color: #ffff;
+        top: 6rem;
+        font-size: 14px;
+        max-width: 30rem;
+        background-color: #0000006b;
+        }
+    footer p {
+        font-size: 0.9rem;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    iframe#hotel_ubicacion {
+        width: 100%;
+        height: 250px;
+    }
+    .contact-section {
+        background-position: center;
+    }
+}
+
+@media (max-width: 530px) {
+    h1.titulo, .tituloprinc {
+        top: 1rem;
+    }
+    .presentacion {
+        margin-top: 1rem;
+        position: absolute;
+        color: #ffff;
+        top: 3rem;
+        font-size: 14px;
+        max-width: 300rem;
+        background-color: #0000006b;
+        }
+    
+}
+@media (max-width: 490px) {
+    h1.titulo, .tituloprinc {
+        top: 1rem;
+    }
+    .presentacion {
+        margin-top: 1rem;
+        position: absolute;
+        color: #ffff;
+        top: 3rem;
+        font-size: 12px;
+        max-width: 40rem;
+        background-color: #0000006b;
+        }
+    
+}
+@media (max-width: 420px) {
+    h1.titulo, .tituloprinc {
+        top: 0.2rem;
+    }
+    .presentacion {
+        margin-top: 0.5rem;
+        position: absolute;
+        color: #ffff;
+        top: 2rem;
+        font-size: 10px;
+        max-width: 40rem;
+        background-color: #0000006b;
+        }
+    
 }

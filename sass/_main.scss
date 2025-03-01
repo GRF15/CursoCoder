@@ -33,7 +33,7 @@
 
 // Estilos para textos dentro de tarjetas 
 .card-title {
-  @include text-style($text-color, 24px);
+  @include text-style($titulo-color, 24px);
 }
 
 .card-text {
@@ -51,26 +51,38 @@
 }
 
 a {
-  color: $link-color;
+  color: $titulo-color;
   text-decoration: none;
 }
 
 // Estilo para botón de reserva (de style.scss) 
 .boton-reserva {
   @include button-style;
-
+  background-color: $titulo-color;
+  color: $text-color;
   margin-top: 2.5rem;
   box-shadow: 2px 2px 3px $button-shadow-color;
 
   &:hover {
     font-size: 1.65rem;
-    color: $navbar-bg;
+    background-color: $navbar-bg;
+    color: $titulo-color;
   }
 }
 
 // Estilo para párrafos (de style.scss)
 .parrafo {
   font-size: 1.5rem;
+}
+
+.presentacion {
+  margin-top: 2.5rem;
+  position: absolute;
+  color: #ffff;
+  top: 20rem;
+  font-size: 24px;
+  max-width: 90rem;
+  background-color: #0000006b;
 }
 
 // Estilos para el carrusel 
