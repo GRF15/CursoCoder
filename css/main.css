@@ -1,5 +1,5 @@
 .body-custom {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: cambria, cochin, georgia, times, "Times New Roman", serif;
   font-size: 18px;
   background-color: #F0E9CB;
   color: #374343;
@@ -10,13 +10,11 @@
   background-color: #acb1c0;
   list-style: none;
 }
-
 .navbar .navlink {
   text-decoration: none;
   color: #519075;
   font-size: 1.15rem;
 }
-
 .navbar .navlink:hover {
   text-decoration: underline;
 }
@@ -24,8 +22,6 @@
 .tituloprinc {
   position: absolute;
   top: 10rem;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 34px;
   color: #519075;
   text-align: center;
@@ -51,9 +47,14 @@
   border: none;
   border-radius: 8px;
 }
-
 .card .card-body {
   padding: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section-ubicacion {
@@ -98,9 +99,8 @@ a {
   transition: all 0.3s ease;
   border-radius: 10px;
   margin-top: 2.5rem;
-  box-shadow: 2px 2px 3px rgba(6, 87, 87, 50%);
+  box-shadow: 2px 2px 3px rgba(6, 87, 87, 0.5);
 }
-
 .boton-reserva:hover {
   font-size: 1.65rem;
   color: #acb1c0;
@@ -115,12 +115,24 @@ a {
   box-shadow: 10px 10px 15px #404F4F;
   border-radius: 12px;
 }
-
 .carousel-custom img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 12px;
+}
+
+.contact-section {
+  position: relative;
+  background-image: url("../assets/Recepcion.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.contact-section .overlay {
+  padding: 100px 0;
 }
 
 .btn-primary {
@@ -130,7 +142,6 @@ a {
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
-
 .btn-primary:hover {
   background-color: rgb(72.9, 129.6, 105.3);
 }
@@ -138,7 +149,6 @@ a {
 footer {
   background-color: #5C5E64;
 }
-
 footer p {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
@@ -149,20 +159,24 @@ footer p {
   background-color: #acb1c0;
 }
 
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 990px) {
+/* mq */
+@media (width <= 990px) {
   .banner h1 {
     top: 15.5rem;
+    font-size: 40px;
+  }
+  .body-custom {
     font-size: 30px;
   }
-  
   .titulo {
-    font-size: 30px;
+    font-size: 40px;
     max-width: 20rem;
   }
 }

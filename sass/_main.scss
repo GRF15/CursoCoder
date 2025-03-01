@@ -12,6 +12,12 @@
   }
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .section-ubicacion {
   height: 300px;
 }
@@ -77,4 +83,16 @@ a {
     width: 100%;
     border-radius: 12px;
   }
+}
+
+.contact-section {
+  position: relative;
+  background-image: url('../assets/Recepcion.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.contact-section .overlay {
+  padding: 100px 0;
 }

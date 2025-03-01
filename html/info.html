@@ -7,10 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" type="image/png" href="../assets/AURORA HOTEL-min.png">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body class="body-custom">
     <!-- Header con logo y barra de navegación -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="d-flex justify-content-between align-items-center">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container-fluid d-flex justify-content-between align-items-center">
@@ -23,13 +27,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item ms-auto">
-                                <a class="navlink me-5 " href="../index.html">Inicio</a>
+                                <a class="navlink me-5" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item ms-auto">
-                                <a class="navlink me-5 " href="./info.html">Nosotros</a>
+                                <a class="navlink me-5" href="./info.html">Nosotros</a>
                             </li>
                             <li class="nav-item ms-auto">
-                                <a class="navlink me-5 " href="./contacto.html">Contacto</a>
+                                <a class="navlink me-5" href="./contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -39,12 +43,14 @@
     </header>
 
     <main class="">
-        <section class="container d-flex align-items-center justify-content-center">
-            <h1 class="titulo m-4 text-center">Sobre Nosotros</h1>
+        <!-- Título de la sección -->
+        <section class="container d-flex align-items-center justify-content-center" data-aos="fade-up">
+            <h1 class="titulo m-4 text-center animate__animated animate__fadeInDown">Sobre Nosotros</h1>
         </section>
-        <section class="container m-3">
+        <!-- Sección de ubicación y descripción -->
+        <section class="m-3 d-flex justify-content-center">
             <div class="row grid gap-3">
-                <div class="col ms-5 section-ubicacion">
+                <div class="col mx-2 section-ubicacion" data-aos="fade-right">
                     <iframe
                         id="hotel_ubicacion"
                         title="Ubicación del Hotel"
@@ -52,30 +58,36 @@
                         src="https://www.openstreetmap.org/export/embed.html?bbox=-54.90221679210663%2C-34.93346775201701%2C-54.89719569683076%2C-34.93058711364989&amp;layer=mapnik">
                     </iframe>
                 </div>
-                <div class="parrafo py-5">
-                    <p class="">El Hotel Aurora está ubicado en un lugar privilegiado, rodeado de majestuosos paisajes naturales y cerca de puntos turísticos importantes, con vistas panorámicas al océano.</p>
+                <div class="parrafo p-5" data-aos="fade-left">
+                    <p>
+                        El Hotel Aurora está ubicado en un lugar privilegiado, rodeado de majestuosos paisajes naturales y cerca de puntos turísticos importantes, con vistas panorámicas al océano.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- Habitaciones con información y precios -->
         <section class="container mt-5">
             <article class="row">
-                <div class="col">
+                <div class="col" data-aos="zoom-in">
                     <div class="card h-100">
                         <img src="../assets/HabitacionSuperior.webp" class="card-img-top img-fluid" alt="habitacion superior">
                         <div class="card-body">
                             <h5 class="card-title">Suite de Lujo</h5>
-                            <p class="card-text">Una experiencia de lujo que combina comodidad y sofisticación. La suite incluye una cama king-size, sala de estar integrada y un baño con acabados de lujo y bañera. Perfecta para quienes buscan un espacio más amplio y exclusivo.</p>
+                            <p class="card-text">
+                                Una experiencia de lujo que combina comodidad y sofisticación. La suite incluye una cama king-size, sala de estar integrada y un baño con acabados de lujo y bañera. Perfecta para quienes buscan un espacio más amplio y exclusivo.
+                            </p>
                             <p class="card-text text-end"><strong>Precio: $150 por noche</strong></p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card h-100">
                         <img src="../assets/HabitacionClara.webp" class="card-img-top img-fluid" alt="habitacion aurora">
                         <div class="card-body">
                             <h5 class="card-title">Habitación Estándar</h5>
-                            <p class="card-text">Esta elegante habitación ofrece un ambiente cálido y moderno, con ventanales panorámicos que permiten la entrada de luz natural. Cuenta con una cama king-size, escritorio y un diseño minimalista que invita al descanso.</p>
+                            <p class="card-text">
+                                Esta elegante habitación ofrece un ambiente cálido y moderno, con ventanales panorámicos que permiten la entrada de luz natural. Cuenta con una cama king-size, escritorio y un diseño minimalista que invita al descanso.
+                            </p>
                             <p class="card-text text-end"><strong>Precio: $100 por noche</strong></p>
                         </div>
                     </div>
@@ -84,19 +96,33 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4 mt-5" data-aos="fade-up">
         <div class="container text-center">
             <p>&copy; 2024 Todos los derechos reservados.</p>
             <p>Nuestras Redes</p>
             <div class="d-flex justify-content-center">
-                <a href="https://www.instagram.com" class="mx-2"><img src="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" alt="Instagram" width="30" height="30"></a>
-                <a href="https://www.facebook.com" class="mx-2"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" width="30" height="30"></a>
-                <a href="https://web.whatsapp.com" class="mx-2"><img src="https://static.whatsapp.net/rsrc.php/v4/yz/r/ujTY9i_Jhs1.png" alt="WhatsApp" width="30" height="30"></a>
+                <a href="https://www.instagram.com" class="mx-2">
+                    <img src="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://www.facebook.com" class="mx-2">
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://web.whatsapp.com" class="mx-2">
+                    <img src="https://static.whatsapp.net/rsrc.php/v4/yz/r/ujTY9i_Jhs1.png" alt="WhatsApp" width="30" height="30">
+                </a>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- AOS.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
 </body>
 </html>
